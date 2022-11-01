@@ -1,9 +1,12 @@
+#import quest1 
 print("Hello, traveler! Welcome to the Stinging Forest. Watch out! You're standing too close to poisonous flowers. One bite - and you're dead.")
-decision = input("Do you want to continue? y/n")
+decision = input("Do you want to continue? y/n ")
 if decision == "y":
     print("Good choice, brave warrior! A lot of treacherous adventures are awaiting for you")
-else:
+elif decision == "n":
     print("Farewell, traveler!")
+else:
+    print("Please enter only 'y' or 'n'")
 print("Choose your race: ")
 class Race():
     def __init__(self, race, hp, attack, money):
@@ -52,9 +55,20 @@ elif chosen_race=="dwarf":
 else:
     print("potato")
 
-print("What quest would you like to choose?")
-print("Wild Forest Adventure", "Wicked Witch Confrontation", "Greedy Leprechaun Bargain", sep = "\n")
+print("What quest would you like to choose? ")
+print("1. Wild Forest Adventure", "2. Wicked Witch Confrontation", "3. Greedy Leprechaun Bargain", sep = "\n")
 
+
+quest_choice = input("Which quest will you choose? 1, 2 or 3 ")
+
+#script_type = ""
+
+#def choosing_quest(script_type):
+ #   return script_type
+
+if quest_choice == "1":
+    execfile("\Admin\Desktop\Python\VScode\Exercises-from-Window\Game-project\quest1.py")
+   # print1()    
 
 
 
