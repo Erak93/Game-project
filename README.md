@@ -36,3 +36,33 @@ armor - 0(list of weapons, bow and arrows)
 attack - 0 (20)
 reward - 0 (20)
 
+
+
+
+
+
+## Races
+
+### Humans
+Humans are well balanced. Good health and good attack
+
+### Elves
+Elves are well versed in magic but they have low defense
+
+### Dwarf
+Dwarves are sturdy. Very good defense but low attack
+
+
+
+
+## Classes
+
+### Warrior
+...
+### Mage
+...
+### Archer
+...
+
+
+
