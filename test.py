@@ -17,10 +17,7 @@ class Race():
         attack = attack-2
     def money_count(self):
         money = money+3
-    #print("race: ", race)
-    #print("hp: ", hp)
-    #print("attack: ", attack)
-    #print("money", money)
+   
 human = Race("human", 50, 20, 30)
 elf=Race("elf", 20,50,30)
 dwarf=Race("dwarf",30,20,50)
@@ -45,12 +42,9 @@ elif chosen_race=="dwarf":
 else:
     print("potato")
 
-print("TEST EST ESTETEST")
-print("TEST EST ESTETEST")
+print("What quest would you like to choose?")
+print("Wild Forest Adventure", "Wicked Witch Confrontation", "Greedy Leprechaun Bargain", sep = "\n")
 
-print("TEST EST ESTETEST")
-print("TEST EST ESTETEST")
-print("TEST EST ESTETEST")
 
 
 
