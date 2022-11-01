@@ -45,6 +45,13 @@ elif chosen_race=="dwarf":
 else:
     print("potato")
 
+print("TEST EST ESTETEST")
+print("TEST EST ESTETEST")
+
+print("TEST EST ESTETEST")
+print("TEST EST ESTETEST")
+print("TEST EST ESTETEST")
+
 
 
 
