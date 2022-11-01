@@ -64,5 +64,9 @@ Dwarves are sturdy. Very good defense but low attack
 ### Archer
 ...
 
+Front-end features:
+side-menue:
+- show stats
+- go to tavern
 
 
