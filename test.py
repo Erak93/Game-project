@@ -35,7 +35,7 @@ def dwarf_features():
     print("race: "+dwarf.race, "hp: "+str(dwarf.hp), "attack: "+str(dwarf.attack), "money: "+str(dwarf.money), sep="\n")
 
 
-chosen_race=input("1. Human 2. Elf 3. Dwarf")
+chosen_race=str.lower(input(("1. Human 2. Elf 3. Dwarf")))
 if chosen_race =="human":
     human_features()
 elif chosen_race=="elf":
@@ -46,7 +46,6 @@ else:
     print("potato")
 
 
-#print("race: "+human.race, "hp: "+str(human.hp), "attack: "+str(human.attack), "money: "+str(human.money), sep="\n")
 
 
 
