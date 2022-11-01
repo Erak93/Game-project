@@ -20,3 +20,19 @@ final goal - if points are left, they will be sent to another script file and ca
 or buy staff with it in an armor shop, clothes shop
 
 tavern side - card game (list of cards, counter for what cards are used, random, set mechanics)
+
+Stats for human:
+obstacle can be killed only with a certain type of weapon, if a player doesn't have it, they need to solve a puzzle, pay with 
+hp - 20
+armor - 0(list of weapons, sword)
+attack - 0 (20)
+money - 0 (20) - add characters, if player helps them, they get money or lose hp or just ignore them
+
+
+Stats for elves:
+
+hp - 20
+armor - 0(list of weapons, bow and arrows)
+attack - 0 (20)
+reward - 0 (20)
+
