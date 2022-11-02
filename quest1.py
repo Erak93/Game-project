@@ -7,3 +7,7 @@ import mymodule
 #movement=input("Choose East,North,South")
 
 mymodule.go_south_forest()
+=======
+mymodule.human_features()
+
+>>>>>>> a8ad87fc97495d94b4bb045e5f4d7540b532e4c7
