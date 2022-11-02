@@ -1,4 +1,5 @@
-#import quest1 
+import mymodule
+
 print("Hello, traveler! Welcome to the Stinging Forest. Watch out! You're standing too close to poisonous flowers. One bite - and you're dead.")
 decision = input("Do you want to continue? y/n ")
 if decision == "y":
@@ -65,10 +66,10 @@ quest_choice = input("Which quest will you choose? 1, 2 or 3 ")
 
 #def choosing_quest(script_type):
  #   return script_type
+ 
 
 if quest_choice == "1":
     import quest1
-    
     #execfile("\Admin\Desktop\Python\VScode\Exercises-from-Window\Game-project\quest1.py")
 
     
