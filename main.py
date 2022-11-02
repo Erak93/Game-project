@@ -30,4 +30,5 @@ def mycharacter(race,race_class):
 
 mycharacter(race,race_class) 
 
-print (race_class.hp)
+
+

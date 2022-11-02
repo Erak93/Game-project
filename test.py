@@ -69,7 +69,9 @@ quest_choice = input("Which quest will you choose? 1, 2 or 3 ")
 if quest_choice == "1":
     import quest1
     #execfile("\Admin\Desktop\Python\VScode\Exercises-from-Window\Game-project\quest1.py")
-       
+
+    
+    
 
 
 
