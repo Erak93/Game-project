@@ -11,6 +11,9 @@ else:
     print("Please enter only 'y' or 'n'")
 print("Choose your race: ")
 
+
+
+
 class Race():
     def __init__(self, race, hp, attack, money):
         self.race = race

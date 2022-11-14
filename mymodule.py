@@ -2,40 +2,69 @@
 
 
 #Class function
+human = {"race": "human", "hp": 50, "attack": 20, "money": 30}
+elf = {"race": "elf", "hp": 20, "attack": 50, "money": 30}
+dwarf = {"race": "dwarf", "hp": 30, "attack": 20, "money": 50}   
 
-class Race():
-    def __init__(self, race, hp, attack, money):
-        self.race = race
-        self.hp = hp
-        self.attack = attack
-        self.money = money
-    def hp_count (self, hp):
-        hp = hp-2
-    def attack_count(self):
-        attack = attack-2
-    def money_count(self):
-        money = money+3
-   
-human = Race("human", 50, 20, 30)
-elf=Race("elf", 20,50,30)
-dwarf=Race("dwarf",30,20,50)
+race_input=input("Come closer. I can not really see you well. Who are you?   ")
+
+
 
 def human_features():
-    print("race: "+human.race, "hp: "+str(human.hp), "attack: "+str(human.attack), "money: "+str(human.money), sep="\n")
+    print("race: "+human["race"], "hp: "+str(human["hp"]), "attack: "+str(human["attack"]), "money: "+str(human["money"]), sep="\n")
 
 def elf_features():
-    print("race: "+elf.race, "hp: "+str(elf.hp), "attack: "+str(elf.attack), "money: "+str(elf.money), sep="\n")
+     print("race: "+elf["race"], "hp: "+str(elf["hp"]), "attack: "+str(elf["attack"]), "money: "+str(elf["money"]), sep="\n")
 
 def dwarf_features():
-    print("race: "+dwarf.race, "hp: "+str(dwarf.hp), "attack: "+str(dwarf.attack), "money: "+str(dwarf.money), sep="\n")
+     print("race: "+dwarf["race"], "hp: "+str(dwarf["hp"]), "attack: "+str(dwarf["attack"]), "money: "+str(dwarf["money"]), sep="\n")
 
-scores = {"points": 0}
-def add_score(score, dict):
-    dict["points"] = dict["points"].value + score
-    print(dict["points"])
+"""
+def add_hp(score, race_input):
+    if race_input == "human":
+        human["hp"] = human["hp"].value + score
+        print("hp: ", human["hp"])
+    elif race_input = "elf":
+        human["hp"] = human["hp"].value + score
+        print("hp: ", human["hp"])
+"""
+"""
+def add_hp(score, race_input):
+    race_input["hp"] = race_input["hp"] + score
+    print("hp: "+race_input["hp"])
+"""
+
+def add_hp(score, dict):
+    dict["hp"] = dict["hp"] + score
+    print("hp: "+str(dict["hp"]))
+   
+
+def add_attack(score, dict):
+    dict["attack"] = dict["attack"] + score
+    print("attack: "+str(dict["attack"]))
+
+def add_money(score, dict):
+    dict["money"] = dict["money"] + score
+    print("money: "+str(dict["money"]))
 
 
-def minus_score():
+
+def minus_hp(score, dict):
+    dict["hp"] = dict["hp"] - score
+    print("hp: "+str(dict["hp"]))
+
+
+def minus_attack(score, dict):
+    dict["attack"] = dict["attack"] - score
+    print("attack: "+str(dict["attack"]))
+
+
+
+def minus_money(score, dict):
+    dict["money"] = dict["money"] - score
+    print("money: "+str(dict["money"]))
+
+    
 
 
 def go_west_forest():
@@ -49,13 +78,27 @@ def go_west_forest():
             riddle_answer=input("What is it?")
             if riddle_answer=="right answer":
                 print("congratulations. Here is your hint")
-                add_score(2, scores)
+                if race_input == "human":
+                    add_hp(2, human)
+                elif race_input == "elf":
+                    add_hp(3, elf)
+                else:
+                    add_hp(1, dwarf)
+                
             else:
                 print("Wrong answer. Leave")
+                if race_input == "human":
+                    minus_hp(2, human)
+                elif race_input == "elf":
+                    minus_hp(3, elf)
+                else:
+                    minus_hp(1, dwarf)
         else:
             print("have it your way! You go back to the middle of the forest.")
     else:
         print("You go back to the middle of the forest")
+
+go_west_forest()
 
 
 def go_south_forest():
