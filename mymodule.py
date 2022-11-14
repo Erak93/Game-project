@@ -29,7 +29,13 @@ def elf_features():
 def dwarf_features():
     print("race: "+dwarf.race, "hp: "+str(dwarf.hp), "attack: "+str(dwarf.attack), "money: "+str(dwarf.money), sep="\n")
 
-<<<<<<< Updated upstream
+scores = {"points": 0}
+def add_score(score, dict):
+    dict["points"] = dict["points"].value + score
+    print(dict["points"])
+
+
+def minus_score():
 
 
 def go_west_forest():
@@ -43,6 +49,7 @@ def go_west_forest():
             riddle_answer=input("What is it?")
             if riddle_answer=="right answer":
                 print("congratulations. Here is your hint")
+                add_score(2, scores)
             else:
                 print("Wrong answer. Leave")
         else:

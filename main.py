@@ -21,6 +21,10 @@ elif race_class=="Wizard":
 
 
 
+
+
+
+
 def mycharacter(race,race_class):
   print("Your race is: ",race)
   print("Your class is:",race_class)

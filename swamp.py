@@ -17,7 +17,7 @@ def fight():
         #hp_count()
         print("You miss the target. The Swamper chops your head off. You're dead, loser")
     elif choice == "3":
-        print("You gave up the quest, loser")
+        print("You gave up the quest, loser. You're back to the middle of the forest. You have scored 0 points.")
 
 def waiting():
     print("There's nothig better than a good story to accompany your best of the day time. THink about your life. When did it go wrong? Why are you in the middle of the forest at night? Alone with a beautiful swamper. Btw, watch out, he is approaching you with a knife")
