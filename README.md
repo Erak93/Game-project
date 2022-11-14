@@ -8,8 +8,21 @@ Choice of character
 
 Start of adventure - choice of quest
 
+Add info: the stiryline about connection between quests
+Preview of each quest. Are you sure you wanna do this?
+Dice - monster that forces to drink poison with less than 3, witch can give cure against poison if you're kind with her
+dice mechanics - where to use more of it?
+
 quest 1
-Setting the goal
+Setting the goal: magical mushroom (looks like poisonous, they substract hp, one needs it to bring to the witch, witch will give something that will help with the Leprechaun)
+
+swamp
+
+human:
+bats(), ghosts(send a message), owl(riddles)
+
+elf:
+dragons, fairies
 
 choices of the way (battle, riddles, cyphers)
 each choice requires different amount of hp, attacks and gets points

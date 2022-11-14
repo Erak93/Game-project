@@ -9,7 +9,7 @@ print("I'll give you time to think")
 print("*", "**", "***", "**", "*", sep = "\n")
 
 def fight():
-    choice == input(str("Swamper is waving with his sword. What do you want to do? 1 - throw him swampaccino in the eyes, 2 - kick the sword out of his hands, 3 - give up the quest"))
+    choice = input(str("Swamper is waving with his sword. What do you want to do? 1 - throw him swampaccino in the eyes, 2 - kick the sword out of his hands, 3 - give up the quest"))
     if choice == "1":
         #hp_count()
         print("The Swamper tries to lick the rest of swampaccino, you have a chance to run for your life. You're in the middle of the forest now")
@@ -31,7 +31,7 @@ def waiting():
 
 
 def go_east_forest():
-    choice = ("You moved to the east. You see a swamp. Want a swim or a sip? y/n")
+    choice = input(("You moved to the east. You see a swamp. Want a swim or a sip? y/n"))
     if choice == "y":
         print("A beautiful Swamper rises from water and offers you a cup of hot swampaccino. You drink it and feel the urge to meditate in the bushes. You're gonna have to take a break")
         waiting()
@@ -56,12 +56,4 @@ elif choice == "south":
     #print("There are only four winds")
 
 
-<<<<<<< Updated upstream
-#mymodule.go_west_forest()
-=======
->>>>>>> Stashed changes
 
-#print("You are back in the middle of the forest. Where do you want to go next")
-#movement=input("Choose East,North,South")
-
-mymodule.go_south_forest()
