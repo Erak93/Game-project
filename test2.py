@@ -16,6 +16,16 @@ def test_score():
         add_score(4, scores)
 
 
+"""
+one dict for hp, attack and armor, points
+after killing monster:
+call three functions:
+add-points/substract-point
+substract-hp/add-hp
+add-armor/substract-armor
+"""
+
+
 
 
 
