@@ -55,11 +55,7 @@ elif choice == "south":
 #else:
     #print("There are only four winds")
 
-
-<<<<<<< Updated upstream
 #mymodule.go_west_forest()
-=======
->>>>>>> Stashed changes
 
 #print("You are back in the middle of the forest. Where do you want to go next")
 #movement=input("Choose East,North,South")

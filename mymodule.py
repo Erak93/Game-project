@@ -83,7 +83,7 @@ def go_south_forest():
 
  
 #Variables list
-=======
+
 #Rolling the dice
 """
 import random
@@ -100,4 +100,4 @@ while roll_again == "yes" or roll_again == "y":
 
     roll_again = raw_input("Roll the dices again?")
 """
->>>>>>> Stashed changes
+

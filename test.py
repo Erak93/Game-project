@@ -1,10 +1,6 @@
-<<<<<<< Updated upstream
-import mymodule
-
-=======
 #import quest1 
 import mymodule
->>>>>>> Stashed changes
+
 print("Hello, traveler! Welcome to the Stinging Forest. Watch out! You're standing too close to poisonous flowers. One bite - and you're dead.")
 decision = input("Do you want to continue? y/n ")
 if decision == "y":
