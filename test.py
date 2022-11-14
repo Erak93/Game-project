@@ -1,88 +1,54 @@
-#import quest1 
-import mymodule
-
-print("Hello, traveler! Welcome to the Stinging Forest. Watch out! You're standing too close to poisonous flowers. One bite - and you're dead.")
-decision = input("Do you want to continue? y/n ")
-if decision == "y":
-    print("Good choice, brave warrior! A lot of treacherous adventures are awaiting for you")
-elif decision == "n":
-    print("Farewell, traveler!")
-else:
-    print("Please enter only 'y' or 'n'")
-print("Choose your race: ")
-class Race():
-    def __init__(self, race, hp, attack, money):
-        self.race = race
-        self.hp = hp
-        self.attack = attack
-        self.money = money
-    def hp_count (self, hp):
-        hp = hp-2
-    def attack_count(self):
-        attack = attack-2
-    def money_count(self):
-        money = money+3
-   
-human = Race("human", 50, 20, 30)
-elf=Race("elf", 20,50,30)
-dwarf=Race("dwarf",30,20,50)
-
-def human_features():
-    print("race: "+human.race, "hp: "+str(human.hp), "attack: "+str(human.attack), "money: "+str(human.money), sep="\n")
-
-def elf_features():
-    print("race: "+elf.race, "hp: "+str(elf.hp), "attack: "+str(elf.attack), "money: "+str(elf.money), sep="\n")
-
-def dwarf_features():
-    print("race: "+dwarf.race, "hp: "+str(dwarf.hp), "attack: "+str(dwarf.attack), "money: "+str(dwarf.money), sep="\n")
-
-print("It is time to pick your race. Here is an overview")
-print()
-print("HUMANS")
-human_features()
-print()
-print("ELVES")
-elf_features()
-print("DWARF")
-dwarf_features()
-print()
-
-chosen_race=str.lower(input(("Which race will you choose? ")))
-if chosen_race =="human":
-    human_features()
-elif chosen_race=="elf":
-    elf_features()
-elif chosen_race=="dwarf":
-    dwarf_features()
-else:
-    print("potato")
-
-print("What quest would you like to choose? ")
-print("1. Wild Forest Adventure", "2. Wicked Witch Confrontation", "3. Greedy Leprechaun Bargain", sep = "\n")
+scores = 0
+scores = {"points": 0}
+def add_score(score, dict):
+    dict["points"] = dict["points"] + score
+    print("points: ", dict["points"])
 
 
-quest_choice = input("Which quest will you choose? 1, 2 or 3 ")
 
-#script_type = ""
+#def minus_score():
 
-#def choosing_quest(script_type):
- #   return script_type
- 
+def test_score():
+    choice = input("Do you want to kill a smuggler? y/n")
+    if choice == "y":
+        add_score(2, scores)
+    else:
+        add_score(4, scores)
 
-if quest_choice == "1":
-    import quest1
-    #execfile("\Admin\Desktop\Python\VScode\Exercises-from-Window\Game-project\quest1.py")
 
-    
-    
+"""
+one dict for hp, attack and armor, points
+after killing monster:
+call three functions:
+add-points/substract-point
+substract-hp/add-hp
+add-armor/substract-armor
+"""
 
 
 
 
 
 
+def go_west_forest():
+    print("You are in the western corner of the forest. A misterious figure appear")
+    first_choice=input("Do you want to investigate?  (y/n)")
+    if first_choice=="y":
+        print("A ghost appears. If it is knowledge you seek, step forward and answer my riddle  ")
+        second_choice=input("Do you want to solve the riddle? y/n")
+        if second_choice=="y":
+            print("riddle riddle")
+            riddle_answer=input("What is it?")
+            if riddle_answer=="right answer":
+                print("congratulations. Here is your hint")
+                add_score(2, scores)
+            else:
+                print("Wrong answer. Leave")
+        else:
+            print("have it your way! You go back to the middle of the forest.")
+    else:
+        print("You go back to the middle of the forest")
 
+go_west_forest()
 
-
-
-
+test_score()
