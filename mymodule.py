@@ -98,6 +98,7 @@ def go_west_forest():
                     minus_hp(5, elf)
                 else:
                     minus_hp(2, dwarf)
+                choosing_dir()
         else:
             print("have it your way! You go back to the middle of the forest.")
     else:
@@ -136,7 +137,37 @@ def go_south_forest():
 
 
 
- 
+choice_list=[]
+
+def choosing_dir():
+    choice = input("Choose east, north, west or south: ")
+    if choice == "east":
+        while choice in choice_list: 
+            print("You can't go there twice")
+            choosing_dir()
+        else:
+            choice_list.append(choice)
+            go_east_forest()
+    elif choice == "west":
+        while choice in choice_list: 
+            print("You can't go there twice")
+            choosing_dir()
+        else:
+            choice_list.append(choice)
+            go_west_forest()
+    elif choice == "north":
+        go_north_forest()
+    elif choice == "south":
+        while choice in choice_list: 
+            print("You can't go there twice")
+            choosing_dir()
+        else:
+            choice_list.append(choice)
+            go_south_forest()
+
+
+choosing_dir()
+
 #Variables list
 
 #Rolling the dice

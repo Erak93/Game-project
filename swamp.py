@@ -32,20 +32,20 @@ def fight():
         choice2 = input("You miss the target. The Swamper chops your head off. You lost all your hp. Do you want to risk and continue the game without it? y/n")
         if choice2 == "y":
             print("Brave choice, noble warrior! You're in the middle of the forest")
-            choosing_dir(0)
+            mymodule.choosing_dir()
         elif choice2 == "n":
             print("Thank you for playing")
     
     elif choice == "3":
         print("You gave up the quest. You're back to the middle of the forest.")
-        choosing_dir()
+        mymodule.choosing_dir()
 
 def waiting():
     print("There's nothig better than a good story to accompany your best of the day time. THink about your life. When did it go wrong? Why are you in the middle of the forest at night? Alone with a beautiful swamper. Btw, watch out, he is approaching you with a knife")
     choice = input("What do you want to do? fight or run?")
     if choice == "run":
         print("Guess that swampaccino gave you extra energy? You're back in the middle of the forest")
-        choosing_dir()
+        mymodule.choosing_dir()
     elif choice == "fight":
         fight()
     
@@ -61,43 +61,17 @@ def go_east_forest():
         choice2 = input("Do you wanna run? y/n")
         if choice2 == "y":
             print("You're in the middle of the forest now")
-            choosing_dir()
+            mymodule.choosing_dir()
             
         elif choice2 == "n":
             print("It was a bad decision. The Swamper kills you. You lost all your hp. Do you want to risk and continue the game without it? y/n")
         if choice2 == "y":
             print("Brave choice, noble warrior! You're in the middle of the forest")
-            choosing_dir()
+            mymodule.choosing_dir()
         elif choice2 == "n":
             print("Thank you for playing")
 
 
-def choosing_dir():
-    choice = input("Choose east, north, west or south: ")
-    if choice == "east":
-        while choice in choice_list: 
-            print("You can't go there twice")
-            choosing_dir()
-        else:
-            choice_list.append(choice)
-            go_east_forest()
-    elif choice == "west":
-        while choice in choice_list: 
-            print("You can't go there twice")
-            choosing_dir()
-        else:
-            choice_list.append(choice)
-            mymodule.go_west_forest()
-    elif choice == "north":
-        mymodule.go_north_forest()
-    elif choice == "south":
-        while choice in choice_list: 
-            print("You can't go there twice")
-            choosing_dir()
-        else:
-            choice_list.append(choice)
-            mymodule.go_south_forest()
-
-choosing_dir()
+mymodule.choosing_dir()
 #else:
     #print("There are only four winds")
