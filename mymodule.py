@@ -6,7 +6,7 @@ human = {"race": "human", "hp": 50, "attack": 20, "money": 30}
 elf = {"race": "elf", "hp": 20, "attack": 50, "money": 30}
 dwarf = {"race": "dwarf", "hp": 30, "attack": 20, "money": 50}   
 
-race_input=input("Come closer. I can not really see you well. Who are you?   ")
+#race_input=input("Come closer. I can not really see you well. Who are you?   ")
 
 
 
@@ -98,7 +98,7 @@ def go_west_forest():
     else:
         print("You go back to the middle of the forest")
 
-go_west_forest()
+#go_west_forest()
 
 
 def go_south_forest():
