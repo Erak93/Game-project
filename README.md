@@ -13,10 +13,7 @@ Preview of each quest. Are you sure you wanna do this?
 Dice - monster that forces to drink poison with less than 3, witch can give cure against poison if you're kind with her
 dice mechanics - where to use more of it?
 
-quest 1
-Setting the goal: magical mushroom (looks like poisonous, they substract hp, one needs it to bring to the witch, witch will give something that will help with the Leprechaun)
 
-swamp
 
 human:
 bats(), ghosts(send a message), owl(riddles)
@@ -82,4 +79,21 @@ side-menue:
 - show stats
 - go to tavern
 
+
+
+## Quest log
+
+### magic mushroom 
+Setting the goal: magical mushroom (looks like poisonous, they substract hp, one needs it to bring to the witch, witch will give something that will help with the Leprechaun)
+
+### West
+Possible encounter. Riddle Creature. If right answer + X Gold. If wrong -X Gold
+
+### East
+Forced encounter. Swamp monster. If correct action + X Hp , if not - X Hp
+
+### South
+Possible encounter. Lady in the Hut. Dice game 
+
+### Nord
 
