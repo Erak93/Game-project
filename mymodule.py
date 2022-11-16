@@ -68,31 +68,36 @@ def minus_money(score, dict):
 
 
 def go_west_forest():
-    print("You are in the western corner of the forest. A misterious figure appear")
+    print("You are in the western corner of the forest. You see something lurking in the shadow")
     first_choice=input("Do you want to investigate?  (y/n)")
     if first_choice=="y":
         print("A ghost appears. If it is knowledge you seek, step forward and answer my riddle  ")
         second_choice=input("Do you want to solve the riddle? y/n")
         if second_choice=="y":
-            print("riddle riddle")
-            riddle_answer=input("What is it?")
-            if riddle_answer=="right answer":
-                print("congratulations. Here is your hint")
+            print("What is not alive but grows, does not breaths but needs air.")
+            print()
+            print("You are allowed to only give one word ")
+            riddle_answer=input("What is it?").capitalize()
+            if riddle_answer=="Fire":
+                print("You surprise me",race_input,"Here is some Gold")
+                print()
+                print("What you seek can be found where the sun shines less.")
                 if race_input == "human":
-                    add_money(10, human)
+                    add_money(5, human)
                 elif race_input == "elf":
                     add_money(5, elf)
                 else:
-                    add_money(5, dwarf)
+                    add_money(10, dwarf)
+                    print("You gained more money thanks to your ability, Hard Bargain !")
                 
             else:
                 print("Wrong answer. Leave")
                 if race_input == "human":
-                    minus_hp(2, human)
+                    minus_hp(5, human)
                 elif race_input == "elf":
-                    minus_hp(3, elf)
+                    minus_hp(5, elf)
                 else:
-                    minus_hp(1, dwarf)
+                    minus_hp(2, dwarf)
         else:
             print("have it your way! You go back to the middle of the forest.")
     else:

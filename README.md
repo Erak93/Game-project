@@ -59,11 +59,11 @@ Event bonus: +hp
 
 ### Elves
 Elves are well versed in magic but they have low defense
-Event bonus: + attack
+Event bonus: + attack thanks to ability
 
 ### Dwarf
 Dwarves are sturdy. Very good defense but low attack
-Event bonus: + money
+Event bonus: + money thanks to ability "Hard bargain"
 
 
 
