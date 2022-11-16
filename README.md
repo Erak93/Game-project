@@ -55,17 +55,20 @@ reward - 0 (20)
 
 ### Humans
 Humans are well balanced. Good health and good attack
+Event bonus: +hp
 
 ### Elves
 Elves are well versed in magic but they have low defense
+Event bonus: + attack
 
 ### Dwarf
 Dwarves are sturdy. Very good defense but low attack
+Event bonus: + money
 
 
 
 
-## Classes
+## Classes (Optional)
 
 ### Warrior
 ...

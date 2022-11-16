@@ -79,11 +79,11 @@ def go_west_forest():
             if riddle_answer=="right answer":
                 print("congratulations. Here is your hint")
                 if race_input == "human":
-                    add_hp(2, human)
+                    add_money(10, human)
                 elif race_input == "elf":
-                    add_hp(3, elf)
+                    add_money(5, elf)
                 else:
-                    add_hp(1, dwarf)
+                    add_money(5, dwarf)
                 
             else:
                 print("Wrong answer. Leave")
